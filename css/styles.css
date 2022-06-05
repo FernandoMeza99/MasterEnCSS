@@ -44,9 +44,13 @@ body{
 }
 
 .wrap{
-    width: 1200px;
+    width: 1530px;
     margin: 0px auto; /*Centramos el elemento*/
 }
+
+
+
+/* Fin estilos generales */
 
 /* -- CABECERA -- */
 
@@ -54,13 +58,189 @@ body{
     width: 100%;
     height: 70px;
     background-color: black;
-    color: white; /*El color de la letra*/
-    font-fami
+    color: white;           /*El color de la letra*/
+    font-family: "BebasNeue";
 }
 
-.gear{
+#logo{
+    float: left;
+    width: 200px;
+    background-color: #37bcf9;
+    text-align: center;  /*Centramos el texto */
+    margin-top: 8px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;
+    
+}
+
+#logo .gear{
+    display: block;
+    float: left;
+    font-size: 30px;
+    margin-top: 8px;
+    margin-left: 26px;
+}
+
+#logo h3{
+    font-size: 40px;
+    display: block;
+    float: right;
+    margin-top: 8px;
+    margin-right: 55px;
+    transition: all 300ms;
+}
+
+#menu{
+    float: right;
+    height: 70px;
+    background: transparent;
+
+}
+
+#menu ul li{
+    font-size: 24px;
+    display: inline-block;
+    margin: 0px 55px 0px 40px;  /*Arriba Derecha Abajo Izquierda*/
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+
+#menu ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+#menu ul li a:hover{
+    color: #37bcf9;
+    transform: scale(1.2,1.2);
+}
+
+.gear, .icon{
     font-family: "WebSymbolsRegular";
 }
 
 
-/* Fin estilos generales */
+/* -- BANNER -- */
+
+#banner{
+    width: 95%;
+    height: 100px;
+    border: 10px solid white; 
+    box-shadow: 0px 0px 2px gray; /*añade efectos de sombra alrededor del marco de un elemento*/
+    background: url(../img/bakbaner.png);
+    background-position: -280px -200px;
+    margin: 20px auto;
+
+}
+
+#banner h1{
+    display: block;
+    width: 850px;
+    font-family: "BebasNeue";
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-left: 29px;
+    margin: 27px auto;
+    font-weight: normal;
+    text-shadow: 2px 2px 1px black;  
+}
+
+/* -- TARJETAS -- */
+
+.card{
+    float: left;
+    overflow: hidden;
+    width: 240px;
+    height: 305px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ddd;
+    margin: 32px;
+    margin-top: 40px;
+    background: white;
+    cursor: pointer;
+}
+
+.card .icon{
+    display: block;
+    width: 100%;
+    height: 130px;
+    font-size: 50px;
+    line-height: 130px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.card .category{
+    width: 100%;
+    height: 50px;
+    font-family: "TrebuchetMS";
+    font-weight: bold;
+    text-align: center;
+    color: #01538c;
+}
+
+.card .description{
+    color: #0064ac;
+    text-align: center;
+    font-family: "TrebuchetMS";
+    font-size: 15px;
+}
+
+/* -- BARRA LATERAL --*/
+
+#lateral{
+    width: 380px;
+    min-height: 1200px;
+    font-family: "TrebuchetMS";
+    float: right;
+    margin-right: 24px;
+}
+
+#lateral h3{
+    display: block;
+    width: auto;
+    height: 45px;
+    line-height: 45px;
+    background: url(../img/pxgray.png),white;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px #393d3f;
+    font-size: 30px;
+    font-family: "BebasNeue";
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#lateral h3:first-child{
+    margin-top: 0px;
+}
+
+#search{
+    width: 90%;
+    height: 30px;
+    margin: 10px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #ccc inset;
+}
+
+#lateral input[type="text"]{
+    width: 90%;
+    height: 30px;
+    outline: none;
+    border: 0;
+    padding-left: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ccc;
+
+}
