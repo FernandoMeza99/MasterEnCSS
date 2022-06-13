@@ -1,155 +1,241 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8"/>
-        <title> Máster en CSS</title>
-        <link rel="icon" type="favicon/x-icon" href="img/supertux.png"/>
-        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-    </head>
 
-    <body>
-        <!-- Inicio de la cabecera-->
-        <header id="header">
-            <div class="wrap">
-                <div id="logo">
-                    <span class="gear">S</span>
-                    <h3>BLOG</h3>
-                </div>
+<head>
+    <meta charset="utf-8" />
+    <title> Máster en CSS</title>
+    <link rel="icon" type="favicon/x-icon" href="img/supertux.png" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
 
-                <nav id="menu">
-                    <ul>
-                        <li><a href="#">INICIO</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">FORMACIÓN</a></li>
-                        <li><a href="#">CONTACTO</a></li>
-                    </ul>
-                </nav>
+<body>
+    <!-- Inicio de la cabecera-->
+    <header id="header">
+        <div class="wrap">
+            <div id="logo">
+                <span class="gear">S</span>
+                <h3>BLOG</h3>
             </div>
-        </header>
 
-        <!-- Fin de la cabecera -->
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">FORMACIÓN</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        
+    <!-- Fin de la cabecera -->
 
-        <section class="wrap">
-            <section id="info">
 
-                <!-- INICIO BANNER -->
 
-                <div id="banner"> 
-                    <h1>CURSOS DE DESARROLLO WEB CON VICTOR ROBLES</h1>
+    <section class="wrap">
+        <section id="info">
+
+            <!-- INICIO BANNER -->
+
+            <div id="banner">
+                <h1>CURSOS DE DESARROLLO WEB CON VICTOR ROBLES</h1>
+            </div>
+
+            <!-- FIN BANNER-->
+
+            <!-- INICIO DE LAS CARTAS -->
+
+            <div id="cards">
+
+                <!-- CARTA 1-->
+                <div class="card">
+                    <p class="icon">H</p>
+                    <h2 class="category">Desarrollo Web</h2>
+                    <p class="description">
+                        Aprende los principales lenguajes para desarrollar webs Conviertete en Master
+                    </p>
                 </div>
 
-                <!-- FIN BANNER-->
+                <!-- CARTA 2-->
+                <div class="card">
+                    <p class="icon">_</p>
+                    <h2 class="category">Sistemas Operativos</h2>
+                    <p class="description">
+                        Aprende a administrar sistemas Linux y Windows
+                    </p>
+                </div>
 
-                <!-- INICIO DE LAS CARTAS -->
-                
-                <div id="cards">
+                <!-- CARTA 3-->
+                <div class="card">
+                    <p class="icon">S</p>
+                    <h2 class="category">Hardware</h2>
+                    <p class="description">
+                        Conoce los estresijos del hardware
+                    </p>
+                </div>
 
-                    <!-- CARTA 1-->
-                    <div class="card">
-                        <p class="icon">H</p>
-                        <h2 class="category">Desarrollo Web</h2>
-                        <p class="description">
-                            Aprende los principales lenguajes para desarrollar webs Conviertete en Master
-                        </p>
+                <!-- CARTA 4-->
+                <div class="card">
+                    <p class="icon">u</p>
+                    <h2 class="category">Redes e Internet</h2>
+                    <p class="description">
+                        Aprende a configurar y adminstrar redes informaticas y servidores
+                    </p>
+                </div>
+
+                <!-- CARTA 5-->
+                <div class="card">
+                    <p class="icon">a</p>
+                    <h2 class="category">Bases de Datos</h2>
+                    <p class="description">
+                        Aprende a montar y administrar bases de datos
+                    </p>
+                </div>
+            </div>
+
+            <!-- FIN DE LAS CARTAS -->
+
+            <!-- INICIO DE LA BARRA LATERAL -->
+
+            <aside id="lateral">
+
+                <h3>BUSCAR</h3>
+
+                <div id="search">
+                    <form>
+                        <input type="text" />
+                        <input type="button" value="L" class="icon" />
+                    </form>
+                </div>
+
+                <h3>LOGIN</h3>
+                <div id="login" class="aside-box">
+                    <form>
+                        <label id="user" class="icon">U</label>
+                        <input type="email" />
+
+                        <label id="password" class="icon">w</label>
+                        <input type="password" />
+
+                        <input type="submit" value="Entrar" />
+                        <input type="reset" value="Limpiar" />
+
+                        <a href="#">Regístrate aquí</a>
+                        <a href="#">¿Has olvidado tu contraseña?</a>
+                    </form>
+                </div>
+
+                <h3>REDES SOCIALES</h3>
+                <div id="social" class="aside-box">
+                    <div class="twitter">
+                        <a href="#" class="icon">t</a>
                     </div>
-                    
-                    <!-- CARTA 2-->
-                    <div class="card">
-                        <p class="icon">_</p>
-                        <h2 class="category">Sistemas Operativos</h2>
-                        <p class="description">
-                            Aprende a administrar sistemas Linux y Windows
-                        </p>
+
+                    <div class="facebook">
+                        <a href="#" class="icon">f</a>
                     </div>
 
-                    <!-- CARTA 3-->
-                    <div class="card">
-                        <p class="icon">S</p>
-                        <h2 class="category">Hardware</h2>
-                        <p class="description">
-                            Conoce los estresijos del hardware
-                        </p>
-                    </div>
-
-                    <!-- CARTA 4-->
-                    <div class="card">
-                        <p class="icon">u</p>
-                        <h2 class="category">Redes e Internet</h2>
-                        <p class="description">
-                            Aprende a configurar y adminstrar redes informaticas y servidores
-                        </p>
-                    </div>
-
-                    <!-- CARTA 5-->
-                    <div class="card">
-                        <p class="icon">a</p>
-                        <h2 class="category">Bases de Datos</h2>
-                        <p class="description">
-                            Aprende a montar y administrar bases de datos
-                        </p>
+                    <div class="youtube">
+                        <a href="#" class="icon">y</a>
                     </div>
                 </div>
 
-                <!-- FIN DE LAS CARTAS -->
-                
-                <!-- INICIO DE LA BARRA LATERAL -->
+                <h3>PATROCINADORES</h3>
+                <div id="Sponsors" class="aside-box"></div>
+            </aside>
+            <!-- FIN DE LA BARRA LATERAL -->
 
-                <aside id="lateral">
+            <!-- INICIO DE LOS ARTICULOS -->
 
-                    <h3>BUSCAR</h3>
+            <section id="articles">
+                <article>
 
-                    <div id="search">
-                        <form>
-                            <input type="text"/>
-                            <input type="button" value="L" class="icon"/>
-                        </form>
+                    <h2>Últimos artículos</h2>
+                    <div class="clearfix"></div>
+                    <div class="data">
+                        <span>Fecha: 25 nov</span>
+                        <span>Categoría: Pruebas</span>
                     </div>
+                    <h4>
+                        <a href="#">Título del artículo</a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisi dolor, dictum eu
+                        tristique nec, sodales in turpis. Quisque eget tristique arcu. Aliquam posuere risus fringilla
+                        orci blandit, sit amet mattis urna rhoncus. In consequat et tellus id bibendum. Sed finibus
+                        mauris eget posuere mattis. Aenean semper malesuada justo. In at nunc ut magna luctus efficitur.
+                        Donec consequat tempus justo ac interdum. Nunc vel consequat magna, vel ornare nisl.
+                    </p>
 
-                    <h3>LOGIN</h3>
-                    <div id="login" class="aside-box">
-                        <form>
-                            <label id="user" class="icon">U</label>
-                            <input type="email"/>
-
-                            <label id="password" class="icon">w</label>
-                            <input type="password"/>
-
-                            <input type="submit" value="Entrar"/>
-                            <input type="reset" value="Limpiar/">
-
-                            <a href="#">Regístrate aquí</a>
-                            <a href="#">¿Has olvidado tu contraseña?</a>
-                        </form>
+                    <div class="data">
+                        <span>Fecha: 25 nov</span>
+                        <span>Categoría: Pruebas</span>
                     </div>
+                    <h4>
+                        <a href="#">Título del artículo</a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisi dolor, dictum eu
+                        tristique nec, sodales in turpis. Quisque eget tristique arcu. Aliquam posuere risus fringilla
+                        orci blandit, sit amet mattis urna rhoncus. In consequat et tellus id bibendum. Sed finibus
+                        mauris eget posuere mattis. Aenean semper malesuada justo. In at nunc ut magna luctus efficitur.
+                        Donec consequat tempus justo ac interdum. Nunc vel consequat magna, vel ornare nisl.
+                    </p>
 
-                    <h3>REDES SOCIALES</h3>
-                    <div id="social" class="aside-box">
-                        <div class="twitter">
-                            <a href="#">t</a>
-                        </div>
-
-                        <div class="facebook">
-                            <a href="#">f</a>
-                        </div>
-
-                        <div class="youtube">
-                            <a href="#">y</a>
-                        </div>
+                    <div class="data">
+                        <span>Fecha: 25 nov</span>
+                        <span>Categoría: Pruebas</span>
                     </div>
+                    <h4>
+                        <a href="#">Título del artículo</a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisi dolor, dictum eu
+                        tristique nec, sodales in turpis. Quisque eget tristique arcu. Aliquam posuere risus fringilla
+                        orci blandit, sit amet mattis urna rhoncus. In consequat et tellus id bibendum. Sed finibus
+                        mauris eget posuere mattis. Aenean semper malesuada justo. In at nunc ut magna luctus efficitur.
+                        Donec consequat tempus justo ac interdum. Nunc vel consequat magna, vel ornare nisl.
+                    </p>
 
-                    <h3>PATROCINADORES</h3>
-                    <div id="Sponsors" class="aside-box"></div>
-                </aside>
-                <!-- FIN DE LA BARRA LATERAL -->
+                    <div class="data">
+                        <span>Fecha: 25 nov</span>
+                        <span>Categoría: Pruebas</span>
+                    </div>
+                    <h4>
+                        <a href="#">Título del artículo</a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisi dolor, dictum eu
+                        tristique nec, sodales in turpis. Quisque eget tristique arcu. Aliquam posuere risus fringilla
+                        orci blandit, sit amet mattis urna rhoncus. In consequat et tellus id bibendum. Sed finibus
+                        mauris eget posuere mattis. Aenean semper malesuada justo. In at nunc ut magna luctus efficitur.
+                        Donec consequat tempus justo ac interdum. Nunc vel consequat magna, vel ornare nisl.
+                    </p>
+
+                    <div class="data">
+                        <span>Fecha: 25 nov</span>
+                        <span>Categoría: Pruebas</span>
+                    </div>
+                    <h4>
+                        <a href="#">Título del artículo</a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisi dolor, dictum eu
+                        tristique nec, sodales in turpis. Quisque eget tristique arcu. Aliquam posuere risus fringilla
+                        orci blandit, sit amet mattis urna rhoncus. In consequat et tellus id bibendum. Sed finibus
+                        mauris eget posuere mattis. Aenean semper malesuada justo. In at nunc ut magna luctus efficitur.
+                        Donec consequat tempus justo ac interdum. Nunc vel consequat magna, vel ornare nisl.
+                    </p>
+                    <article id="blog">
+                        <a href="#">IR A BLOG</a>
+                    </article>
+                </article>
             </section>
+            <!-- FIN DE LOS ARTICULOS-->
         </section>
+    </section>
 
-        
-        
 
-    
-        
-    </body>
+</body>
+
 </html>

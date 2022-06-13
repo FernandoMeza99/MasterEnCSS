@@ -48,7 +48,10 @@ body{
     margin: 0px auto; /*Centramos el elemento*/
 }
 
-
+.clearfix{
+    float: none;
+    clear: both;
+}
 
 /* Fin estilos generales */
 
@@ -304,7 +307,8 @@ body{
     box-shadow: 2px 2px 1px solid grey inset;
 }
 
-#login #user{
+#login #user,
+#login #password{
     display: block;
     text-align: center;
     position: absolute;
@@ -312,4 +316,98 @@ body{
     margin-top: 6px;
     height: 30px;
 }
+
+#login #password{
+    margin-left: 24px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+/* MAQUETANTO BOTONES DEL LOGIN */
+
+#login input[type="submit"],
+#login input[type="reset"]{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 47px;
+    color: white;
+    /* La linea de abajo significa que desde abajo
+        empieza un color, y poco a poco hacia arriba
+        va cambiando a otro color.*/
+    background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%); 
+    border: 1px solid #156785;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "TrebuchetMS";
+    font-weight: lighter;
+    transition: all 300ms;
+}
+
+#login input[type="submit"]:hover,
+#login input[type="reset"]:hover{
+    box-shadow: 0px 0px 3px gray;
+}
+
+/* MAQUETANTO ENLACES */
+
+#login a{
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: -17px;
+    margin-left: 20px;
+    font-size: 14px;
+    width: 90%;
+}
+
+#login a:hover{
+    text-decoration: underline;
+    color: #2f78bc;
+}
+
+/* MAQUETANDO EL APARTADO DE REDES SOCIALES */
+
+#social{
+    width: 55%;
+    height: 185px;
+}
+
+#social a{
+    text-decoration: none;
+    display: block;
+    color: #333;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 /* FIN DE LA BARRA LATERAL */
+
+/* INICIO DE LOS ARTICULOS */
+
+#articles{
+    width: 1035px;
+    float: left;
+}
+
+#articles h2{
+    display: block;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    background: url(../img/pxgray.png),white;
+}
+/* FIN DE LOS ARTICULOS */
