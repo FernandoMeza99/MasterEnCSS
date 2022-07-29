@@ -1,0 +1,114 @@
+/* El ancho maximo en donde se tiene que empezar
+a hacer el responsive 
+Es decir del px 0 hasta el indicado se van a aplicar 
+dichos estilos
+*/
+@media (max-width:1520px){
+    .wrap{
+        width: 90%;
+        margin: 0px auto; /* centrados */
+    }
+
+    #banner h1{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .card{
+        width: 17%;
+        margin: 1%;
+    }
+
+    .card p{
+        display: block;
+        width: 90%;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    #articles{
+        width: 61%
+    }
+
+    #articles article{
+        width: 97%;
+    }
+
+    #footer .wrap > div{
+        width: 26%;
+    }
+
+    #footer #browsers img{
+        width: 15%;
+    }
+
+    #footer h5{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:1216px){
+    .card .category{
+        font-size: 15px;
+    }
+
+    .card .description{
+        font-size: 12px;
+    }
+
+    #articles{
+        width: 58%;
+    }
+
+    #footer .wrap > div {
+        width: 25%;
+      }
+}
+
+@media (max-width:1122px){
+
+    #articles{
+        width: 56%;
+    }
+
+    #footer h5{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:1072px){
+
+    #lateral{
+        width: 25%;
+    }
+
+    #articles{
+        width: 65%;
+    }
+
+    .aside-box{
+        height: 290px;
+    }
+
+    #login a{
+        margin-left: 14px;
+    }
+
+    #social {
+        width: 90%;
+    }
+    
+    #lateral input[type="text"]{
+        width: 83%;
+    }
+
+    #login input[type="email"], 
+    #login input[type="password"]{
+        width: 70%;
+    }
+
+    #login input[type="submit"], 
+    #login input[type="reset"]{
+        font-size: 12px;
+    }
+}
