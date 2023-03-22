@@ -3,13 +3,85 @@ body{
     font-family: sans-serif;
 }
 
+/* ---- EJERCICIO COMPLETO */
+
+#website *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#website{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+
+    width: 75%;
+    height: 100vh;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+}
+
+#cabecera{
+    grid-column: 1/6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    color: white;
+}
+
+#menu{
+    grid-column: 1/6;    
+    background: lightblue;
+    color: black;
+}
+
+#menu ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    list-style: none;
+}
+
+#contenido{
+    grid-column: 1/5;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+
+    background: #eee;
+}
+
+#contenido article{
+    background: #ccc;
+    border: 1px solid #555;
+}
+
+#lateral{
+    grid-column: 5/6;
+    background: orange;
+    color:white;
+}
+
+#pie-pagina{
+    grid-column: 1/6;
+    background: black;
+    color: white;
+}
+
+/* ---------------------------- */
 .layout{
 
     width: 1200px;
     margin: 0px auto;
+    height: 700px;
+
     /* DEFINIR EL GRID LAYOUT */
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr) 3fr repeat(2, 1fr);
 
     /* ESPACIO ENTRE LOS ELEMENTOS GRID */
     grid-gap: 10px;
@@ -27,17 +99,36 @@ body{
 }
 
 .layout .red{
+/*     
+    grid-column-start: 1;
+    grid-column-end: 3; 
+*/
+    grid-column: 1/4;
     background: red;
 }
 
 .layout .blue{
+    grid-column: 2/4;
     background: blue;
 }
 
 .layout .green{
+    grid-row: 2/6;
     background: green;
 }
 
 .layout .pink{
+    grid-column: 2/3;
+    grid-row: 3/5;
     background: pink;
+}
+
+.layout .orange{
+    grid-row: 3/5;
+    background: orange;
+}
+
+.layout .lightblue{
+    grid-column: 2/4;
+    background: lightblue;
 }
